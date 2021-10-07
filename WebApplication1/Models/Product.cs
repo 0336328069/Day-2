@@ -6,18 +6,13 @@ using System.Threading.Tasks;
 
 namespace WebApplication1.Models
 {
-    public class Juice
+    public class Product
     {
         [Key]
-        public int ID { get; set; }
+        public int Id { get; set; }
         public string Image { get; set; }
-        public string name { get; set; }
+        public string Name { get; set; }
         public int Price { get; set; }
-        public Juice(int id,string img,string n,int price) {
-            ID = id;
-            Image = img;
-            name = n;
-            Price = price;
-        }
+        public int Categories { get; set; }
     }
 }
